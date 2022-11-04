@@ -1,0 +1,20 @@
+.Chat {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Chat_1 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.Chat_2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.dialog.active{
+    color: gold;
+}

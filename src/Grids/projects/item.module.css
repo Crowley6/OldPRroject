@@ -1,0 +1,9 @@
+.items{
+    background-color: #656058;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2.5px 1.25px rgb(179, 179, 179);
+    margin: 15px auto;
+}

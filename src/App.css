@@ -1,0 +1,15 @@
+.App {
+  padding: 5px 0;
+  display: grid;
+  grid-template-areas: "grid_1 grid_1" "grid_2 grid_3";
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 1fr 11fr;
+  grid-gap: 1em;
+  width: 1366px;
+  height: 918px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 2.5px 1.25px rgb(175, 152, 21);
+  border: 1px solid #AFA189;
+  border-radius: 10px;
+  padding: 5px;
+}

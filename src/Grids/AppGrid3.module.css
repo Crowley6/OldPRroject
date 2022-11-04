@@ -1,0 +1,9 @@
+.AppGrid_3 {
+    grid-area: grid_3;
+    background-color:#938872;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}

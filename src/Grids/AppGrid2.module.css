@@ -1,0 +1,13 @@
+.AppGrid_2 {
+    grid-area: grid_2;
+    background-color: #BEB19B;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-size: 20px;
+    box-shadow: 0px 0px 2.5px 1.25px rgb(175, 152, 21);
+}
+.catalog{
+    text-decoration: none;
+}
