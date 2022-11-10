@@ -1,5 +1,5 @@
 import React from 'react';
-import m3 from './AppGrid3.module.css';
+import m3 from './css/DinamycGrid.module.css';
 
 const AppGrid4 = (props) => {
   return (

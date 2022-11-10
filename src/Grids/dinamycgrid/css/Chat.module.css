@@ -15,6 +15,3 @@
     flex-direction: column;
     width: 70%;
 }
-.dialog.active{
-    color: gold;
-}

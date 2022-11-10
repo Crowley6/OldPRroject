@@ -1,5 +1,5 @@
 import React from 'react';
-import m1 from './AppGrid1.module.css';
+import m1 from './css/Vitrina.module.css';
 
 const AppGrid1 = () => {
   return (
