@@ -2,12 +2,21 @@ import React from 'react';
 import comment from './comment.module.css';
 
 const Comment = (props) => {
+
+  let a = () => {
+    let aRefText = aRef.current.value;
+    alert(aRefText);
+  }
+
+  let aRef = React.createRef();
+  
+
   return (
     <div className={`${comment.comment}`}>
       <a>Проект</a><br />
-      <textarea name="" id="" cols="30" rows="10" value={props.message}></textarea>
+      <textarea cols="30" rows="10" ref={aRef} value={props.message}></textarea>
       <div><span>like: {props.likeCount}</span></div>
-      <button>Новый пост</button>
+      <button onClick={a}>Новый пост</button>
     </div>
   );
 }

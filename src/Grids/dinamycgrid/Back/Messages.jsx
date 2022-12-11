@@ -1,19 +1,23 @@
+import React from 'react';
 import m5 from './../css/Chat.module.css';
 
 const Message = (props) => { return <div>{props.message}</div> }
 
-const Messages = () => {
-    let mD = [
-        { id: 1, message: "Какое-то сообщение" },
-        { id: 2, message: "Что-то на неважном" },
-        { id: 3, message: "ААА!ъУъ!?" },
-    ]
+const Messages = (props) => {
 
-    let mElem = mD.map(m => <Message message={m.message} />);
+    let mElem = props.mD.map(m => <Message message={m.message} />);
+
+    let aRef = React.createRef();
+    let addPost = () => {
+        let aRefText = aRef.current.value;
+        props.addPost(aRefText);
+    };
 
     return (
         <div className={m5.Chat_2}>
-            {mElem}
+            <div>{mElem}</div>
+            <textarea cols="20" rows="5" ref={aRef}></textarea>
+            <button onClick={addPost}>123</button>
         </div>
     )
 }

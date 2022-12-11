@@ -8,7 +8,7 @@ import SomeChat from './Grids/dinamycgrid/SomeChat';
 import About from './Grids/dinamycgrid/About';
 import MyProfile from './Grids/dinamycgrid/MyProfile';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="App">
@@ -16,11 +16,11 @@ const App = () => {
         <Menu />
         <div>
           <Routes>
-            <Route path='/Main' element={<Main />} />
+            <Route path='/Main' element={<Main dcID2={props.dcID.MainBack} />} />
             <Route path='/Projects' element={<Projects />} />
-            <Route exact path='/SomeChat/*' element={<SomeChat />} />
+            <Route exact path='/SomeChat/*' element={<SomeChat dcID2={props.dcID} addPost={props.addPost} />} />
             <Route path='/About' element={<About />} />
-            <Route path='/MyProfile' element={<MyProfile />} />
+            <Route path='/MyProfile' element={<MyProfile profileInfo={props.profileInfo.MyProfile} addnewProfile={props.addnewProfile} addnewProfileText={props.addnewProfileText} />} />
           </Routes>
         </div>
 

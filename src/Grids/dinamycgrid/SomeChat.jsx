@@ -4,13 +4,13 @@ import Friends from './Back/Friends';
 import Messages from './Back/Messages';
 
 
-const AppGrid6 = () => {
+const AppGrid6 = (props) => {
 
   return (
     <div className={m3.AppGrid_3}>
       <div className={m5.Chat}>
-        <Friends />
-        <Messages />
+        <Friends dID={props.dcID2.ChatBack.dID} />
+        <Messages mD={props.dcID2.ChatBack.mD} addPost={props.addPost} />
       </div>
     </div>
   );
